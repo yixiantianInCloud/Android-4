@@ -36,9 +36,22 @@
     
     <Button
         android:id="@+id/btnTakePic"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Take a Picture" />
+
+    <Button
+        android:id="@+id/xfqTestBt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"      
-        android:text="Take a Picture" />
+        android:text="startNewActivity11" />
+    <Button
+        android:id="@+id/xfqTestBt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="startNewActivity22" />
 
 </LinearLayout>

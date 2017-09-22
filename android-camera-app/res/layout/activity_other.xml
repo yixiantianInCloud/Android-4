@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:paddingBottom="@dimen/activity_vertical_margin"  
+    android:paddingLeft="@dimen/activity_horizontal_margin"  
+    android:paddingRight="@dimen/activity_horizontal_margin"  
+    android:paddingTop="@dimen/activity_vertical_margin"  
+    tools:context=".MainActivity" >
+
+     <Button
+         android:id="@+id/xfqTestBtN1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_centerVertical="true"
+         android:layout_marginLeft="30dp"
+         android:text="NewActivity1" />
+
+     <Button
+         android:id="@+id/xfqTestBtN2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/xfqTestBtN1"
+         android:layout_alignBottom="@+id/xfqTestBtN1"
+         android:layout_marginLeft="20dp"
+         android:layout_toRightOf="@+id/xfqTestBtN1"
+         android:text="NewActivity2" />
+
+     <TextView
+         android:id="@+id/xfqMessage"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="95dp"
+         android:background="#FF0000"
+         android:text="init_value"
+         android:textColor="#FFF"
+         android:textSize="18dp" />
+
+</RelativeLayout> 
