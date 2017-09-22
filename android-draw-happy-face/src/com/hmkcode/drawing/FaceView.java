@@ -33,12 +33,21 @@ public class FaceView extends View {
 		face = new Face(radius);
 	}
 	
-	
+	@Override
+	protected void onAttachedToWindow() {
+	    Log.d("FaceView", "onAttachedToWindow ...");
+	}
+
 	@Override
 	protected void onDraw(Canvas canvas) {
 		super.onDraw(canvas);
+		Log.d("FaceView", "onDraw ...");
 		face.draw(canvas);
 		
+	}
+	@Override
+	protected void onLayout(boolean changed, int left, int top, int right, int bottom) { 
+		Log.d("FaceView", "onLayout ...");
 	}
 	
 	@Override
@@ -55,6 +64,8 @@ public class FaceView extends View {
 
 	    int width;
 	    int height;
+
+	    Log.d("FaceView", "onMeasure ...");
 
 	    //Measure Width
 	    if (widthMode == MeasureSpec.EXACTLY) {
